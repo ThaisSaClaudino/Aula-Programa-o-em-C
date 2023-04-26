@@ -1,0 +1,18 @@
+//Um vetor de caracteres é uma string
+//O uso de strings em C não é tão trivial como em outras linguagens
+//Note que no scanf não precisamos usar &...
+//… isto se deve ao fato do nome do vetor indica o endereço de início do vetor
+#include <stdio.h>
+#include <locale.h>
+
+int main() {
+    setlocale(LC_ALL, "Portuguese");
+    
+    char palavra []={'B','o','m',' ','d','i','a'};
+    printf("%s",palavra);
+    char palavra1[10];
+    printf("\nDigite uma palavra de até 10 caracteres:");
+    scanf("%s",palavra1);
+    printf("%s",palavra1);
+    
+    }
