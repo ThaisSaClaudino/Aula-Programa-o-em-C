@@ -1,0 +1,47 @@
+include<stdio.h>
+#include<stdlib.h>
+
+#define NUMERO_MAX_TENTATIVAS 3
+
+int main(void){
+
+    int segundos=time(NULL);
+    srand(segundos);
+    int numeroSecreto=rand()%100;
+
+    int palpite;
+
+    printf("******************************\n");
+    printf("Bem vindo ao jogo de advinhação\n");
+    printf("******************************\n");
+
+    printf("O número secreto é %d \n \n",numeroSecreto);
+
+    for(int tentativas=0;tentativas<NUMERO_MAX_TENTATIVAS;tentativas++){
+
+        printf("Digite um número:");
+        scanf("%d",&palpite);
+        printf("Você digitou: %d \n",palpite);
+        printf(" \n Tentativas:%d \n \n" ,tentativas+1);
+
+        //testa se palpite é igual ao número secreto
+        if(palpite==numeroSecreto){
+            printf("Parabéns! O número secreto é: %d \n",palpite);
+            break;
+
+        }
+        else{
+            printf("O número secreto não é: %d \n",palpite);
+            //verifcar se palpite é menor que número secreto
+            if(palpite<numeroSecreto){
+                printf("O número que você digitou é menor que o número secreto!\n\n");
+            }
+            else
+            {
+                printf("O número que você digitou é maior que o número secreto!\n\n");
+            }
+        }//for
+    }
+    printf("***FIM DO JOGO****");
+
+}
