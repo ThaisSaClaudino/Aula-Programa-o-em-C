@@ -1,0 +1,136 @@
+include<stdio.h>
+
+int main(){
+    /*float saldo=1000,saque,deposito;
+
+    for(int i=0;i<3;i++){
+        printf("\nSaque do mês:");
+        scanf("%f",&saque);
+
+        printf("\nDepósito do mês:");
+        scanf("%f",&deposito);
+
+        saldo=saldo+deposito-saque;
+
+        printf("\n\nSaldo final %.2f",saldo);
+    }
+
+    printf("\n\n\n\nSaldo final %.2f",saldo);
+
+    float media,soma=0,nota;
+
+    for(int i=0;i<5;i++){
+        printf("\n Nota:");
+        scanf("%f",&nota);
+        soma=soma+nota;
+    }
+    media=soma/5;
+
+    printf("Média:%.2f",media);
+
+    int numero;
+    printf("\nNúmero:");
+    scanf("%d", &numero);
+    for(int i=0; i<=numero; i++){
+        if(i%2==0){
+            printf("\n %d",i);
+        }
+    }
+
+    int numero,maior,menor;
+
+    printf("\n\nNúmero:");
+    scanf("%d",&numero);
+    maior=numero;
+    menor=numero;
+
+    for(int i=0;i<3;i++){
+        printf("\n\nNúmero:");
+        scanf("%d",&numero);
+
+        if(numero>maior){
+            maior=numero;
+        }
+        if(numero<menor){
+            menor=numero;
+        }
+
+    }
+
+    printf("\n\n Maior:%d",maior);
+    printf("\n\n Menor:%d",menor);
+
+    float numero;
+
+    printf("Digite um número:");
+    scanf("%f",&numero);
+
+    for (float i=1;i<=10;i++){
+        printf(" \n\n %.0f / %.0f = %.1f",numero,i,numero/i);
+    }
+
+    int numero;
+
+    printf("Digite um número:");
+    scanf("%d",&numero);
+
+    for(int i = numero;i>=1;i--){
+        //if(i%3==0){
+            printf("\n Número:%d",i);
+        //}
+    }
+
+    int numero;
+
+    while(numero!=-1){
+
+        printf("\n\nDigite um número:");
+        scanf("%d",&numero);
+
+        if(numero%2==0 || numero%5==0){
+            printf("\n\nNúmero:%d",numero);
+        }
+    }
+
+
+    float valor, soma=0;
+
+    while(1){
+        printf("\n\n Valor:");
+        scanf("%f",&valor);
+
+        if(valor==999){
+            break;
+        }
+
+        soma=soma+valor;
+    }
+
+    printf("\n\n\nTotal da compra:%.2f",soma);
+
+    float idade,soma=0,media,quantMaior=0;
+
+    while(idade>0){
+        printf("\nDigite uma idade:");
+        scanf("%f",&idade);
+
+        if(idade>=18 && idade>0){
+            quantMaior++;
+            soma=soma+idade;
+        }
+    }
+
+    printf("\n\nQuantidade de maiores: %.0f",quantMaior);
+    media=soma/quantMaior;
+    printf("\n\nMedia idade de maiores: %.1f",media);*/
+
+    int numero=1;
+
+    while(numero<=20 && numero>=1){
+        if(numero%3==0){
+            printf("\n %d",numero);
+        }
+        numero++;
+    }
+
+}
