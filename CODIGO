@@ -1,0 +1,76 @@
+include<stdio.h>
+int main(){
+    /*
+    questão 11
+    //elemento da PA
+    int a=2;
+    //razao da PA
+    int r=3;
+
+    for(int i=1;i<=5;i++){
+        printf("\n\n Elemento %d: %d",i,a);
+        a=a+r;
+    }
+
+    //questão 13
+    int chinchilas;
+    printf("\n Número inicial de chinchilas:");
+    scanf("%d",&chinchilas);
+
+    for(int i=1;i<=10;i++){
+        printf("\n \nAno %d: %d chinchilas",i,chinchilas);
+        chinchilas=chinchilas*3;
+    }
+
+    //questão 12
+    float conta,totalContas=0;
+    int numeroContas=0;
+
+    while(1){
+        printf("\n Valor da conta:");
+        scanf("%f",&conta);
+        if(conta<0){
+            break;
+        }
+        totalContas=totalContas+conta;
+        numeroContas=numeroContas+1;
+    }
+    printf("\n\n Total: %.2f",totalContas);
+    printf("\n\n Número de contas: %d",numeroContas);
+
+    //questão 16
+    int temp,anterior=1,atual=1;
+
+    printf("\n\nPrimeiro e segundo números: %d e %d",anterior,atual);
+
+    for(int i=3;i<=50;i++){
+        temp=atual;
+        atual=atual+anterior;
+        anterior=temp;
+        printf("\n Número %d: %d",i,atual);
+    }*/
+
+   //questão 19
+    int numero;
+    int testaPrimo;
+
+    while(1){
+        printf("\n\nDigite um número:");
+        scanf("%d",&numero);
+        if(numero==-1){
+            break;
+        }
+        //true -> 1
+        testaPrimo=1;
+        for(int i=numero-1;i>=2;i--){
+            if(numero%i==0){
+                //false -> 0
+                testaPrimo=0;
+                printf("\n %d é divisor de %d",i,numero);
+            }
+        }
+        if(testaPrimo==1){
+            printf("\n Número primo");
+        }
+    }
+}
