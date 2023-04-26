@@ -1,0 +1,13 @@
+1 - Faça um array para armazenar todos os números pares entre 0 e 10. Imprima o array.
+2 - Crie um array com valores pré-determinados (ex: vetor[ ]={1,20,3,40,2}). Encontre o maior elemento do vetor.
+3 - Crie um array com valores pré-determinados (ex: vetor[ ]={1,20,3,40,2}). Encontre o menor elemento do vetor.
+4 - Armazene 10 números de uma PA em um array. Dado que a1=2 e r=5. Imprima o vetor.
+4 - Crie um array com valores pré-determinados. Faça um while que permita que o usuário digite uma posição do array, cujo conteúdo deverá ser exibido na tela.
+5 - Permita que o usuário digite 3 notas em um array. Calcule a média das notas do array.
+6 - Modifique o programa da questão anterior para que o usuário decida quantas notas vai digitar no array.
+7 - Crie dois arrays de números. Faça a soma dos dois arrays (some os elementos que estão na mesma posição nos dois arrays) e armazene o resultado em um terceiro array.
+8 - Crie um array de números e exiba todos os números pares deste array.
+9 - Crie um array de números e exiba-o em ordem inversa.
+10 - Crie o array numeros[ ] = {1, -9, -3, 4, 6, 2, -5, 3}. Substitua todos os números negativos por 0 e imprima o array.
+11 - Fazer um programa para ler 5 valores e, em seguida, mostrar o maior, o menor e a média dos valores.
+12 - Fazer um programa para ler 5 valores e, em seguida, mostrar a posição onde se encontram o maior e o menor valor.
