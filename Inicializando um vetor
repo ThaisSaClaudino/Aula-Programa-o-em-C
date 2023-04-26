@@ -1,0 +1,23 @@
+//Um array é um conjunto de posições de memória que são referenciado pelo mesmo nome de variável e possuem o mesmo tipo de dado.Cada posição do array possui um índice.Para acessar uma posição usamos a sintaxe: <nome-do-array>[<posição>]
+
+//Um vetor pode ser criado com valores pré-definidos.Qualquer posição pode ser acessada e modificada 
+
+
+#include <stdio.h>
+#include <locale.h>
+
+int main() {
+    setlocale(LC_ALL, "Portuguese");
+    //declaração e inicialização de um vetor
+    int c[4]={10,20,40,50};
+
+    printf("\n%d",c[1]);
+    
+    //alteração do conteúdo da posição 01
+    c[1]=90;
+
+    printf("\n%d",c[1]);
+
+    return 0;
+}
+
