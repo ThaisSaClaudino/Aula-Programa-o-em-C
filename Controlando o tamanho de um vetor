@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <locale.h>
+
+int main() {
+    setlocale(LC_ALL, "Portuguese");
+    
+//O vetor pode ser dimensionado por uma variável ou uma constante
+
+//O tamanho do vetor é estático, não pode ser alterado após sua criação
+int tamanho = 10;
+int numeros[tamanho];
+
+//armazena dados no vetor
+for(int i=0; i<tamanho;i++){
+  numeros[i]=i;
+  }
+  //imprime todas as posições do vetor
+  for(int i=0; i<tamanha; i++){
+    printf("\nPosição [%d]=%d",i,numeros[i]);
+  }
