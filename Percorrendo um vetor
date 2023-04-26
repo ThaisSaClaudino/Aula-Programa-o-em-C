@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <locale.h>
+
+int main() {
+    setlocale(LC_ALL, "Portuguese");
+int numeros[10];
+
+//armazena dados no vetor
+for(int i=0; i<10; i++){
+numeros[i]=i;
+}
+
+//imprime todas as posições do vetor
+for(int i=0;i<10; i++){
+printf("\n Posição [%d]=%d",i,numeros[i]);
+}
