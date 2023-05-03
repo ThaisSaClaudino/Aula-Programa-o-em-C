@@ -11,3 +11,39 @@
 10 - Crie o array numeros[ ] = {1, -9, -3, 4, 6, 2, -5, 3}. Substitua todos os números negativos por 0 e imprima o array.
 11 - Fazer um programa para ler 5 valores e, em seguida, mostrar o maior, o menor e a média dos valores.
 12 - Fazer um programa para ler 5 valores e, em seguida, mostrar a posição onde se encontram o maior e o menor valor.
+
+
+#include<stdio.h>
+
+int main(){
+    //questao 1
+    /*
+    int pares[6];
+    int indicePares=0;
+
+   for(int i=0;i<=10;i++){
+    if(i%2==0){
+          pares[indicePares]=i;
+          indicePares=indicePares+1;
+    }
+   }
+
+   for(int i=0;i<=indicePares;i++){
+    printf("\n\npares[%d]:%d",i,pares[i]);
+   }*/
+
+   //questao2
+
+   int vetor[]={1,20,3,40,2};
+   int maior=vetor[1];
+   int indiceMaior=0;
+
+   for(int i=0;i<5;i++){
+        if(vetor[i]>maior){
+            maior=vetor[i];
+            indiceMaior=i;
+        }
+   }
+   printf("Maior: %d",maior);
+   printf("\nPosição do maior: %d",indiceMaior);
+}
