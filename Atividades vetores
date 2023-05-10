@@ -47,3 +47,116 @@ int main(){
    printf("Maior: %d",maior);
    printf("\nPosição do maior: %d",indiceMaior);
 }
+#include<stdio.h>
+
+int main(void){
+/*//questão 3
+int vetor[]={20,4,3,40,1};
+int menor,posMenor;
+
+menor=vetor[0];
+posMenor=0;
+
+    for(int i=1;i<=5;i++){
+        if(vetor[i]<menor){
+            menor=vetor[i];
+            posMenor=i;
+        }
+    }
+printf("\n \n Menor:%d",menor);
+printf("\n Posição menor:%d",posMenor);
+
+//questão 4
+int pa[10];
+//PA com a1=2 e r=5
+pa[0]=2;
+int r=5;
+
+for(int i=1;i<10;i++){
+    pa[i]=pa[i-1]+r;
+}
+
+for(int i=0;i<10;i++){
+    printf("\n PA[%d]=%d",i+1,pa[i]);
+}
+
+    //questao 5
+    int vetor[]={5,7,8,0,12,23};
+    int posicao;
+
+    while(1){
+        printf("\nPosição:");
+        scanf("%d",&posicao);
+        if(posicao==-1){
+            break;
+        }
+        printf("\n\n Posição[%d]=%d",posicao,vetor[posicao]);
+    }
+
+
+    //questao 6
+    float notas[3],media,soma=0;
+
+
+    for(int i =0;i<3;i++){
+        printf("\nNota:");
+        scanf("%f",&notas[i]);
+    }
+
+    for(int i=0;i<3;i++){
+        soma=soma+notas[i];
+    }
+    media=soma/3;
+    printf("\n Média:%.1f",media);
+
+
+    //questao 7
+    int numNotas;
+
+    printf("\n Quantas notas?");
+    scanf("%d",&numNotas);
+
+
+    float notas[numNotas],media,soma=0;
+
+
+    for(int i =0;i<numNotas;i++){
+        printf("\nNota:");
+        scanf("%f",&notas[i]);
+    }
+
+    for(int i=0;i<numNotas;i++){
+        soma=soma+notas[i];
+    }
+    media=soma/numNotas;
+    printf("\n Média:%.1f",media);
+
+    //questao 8
+    int vetor1[]={ 1, 2, 3, 4};
+    int vetor2[]={10,20,30,40};
+    int vetor3[4];
+
+    for(int i=0;i<4;i++){
+        vetor3[i]=vetor1[i]+vetor2[i];
+    }
+
+    for(int i=0;i<4;i++){
+        printf("\n Vetor3[%d]=%d",i,vetor3[i]);
+    }
+
+    //questao 9
+    int vetor[]={2,5,7,4,8};
+
+    for(int i=0;i<5;i++){
+        if(vetor[i]%2==0){
+            printf("\nVetor[%d]=%d",i,vetor[i]);
+        }
+    }*/
+
+    //questao 10
+    int vetor[]={2,5,7,4,8};
+
+    for(int i=4;i>=0;i--){
+         printf("\nVetor[%d]=%d",i,vetor[i]);
+    }
+}
