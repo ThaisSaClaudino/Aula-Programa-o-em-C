@@ -1,0 +1,18 @@
+1 -
+#include <stdio.h>
+
+int parametro(int numero) {
+    if (numero < 0) {
+        return -1;
+    } else if (numero == 0) {
+        return 0;
+    } else {
+        return 1;
+    }
+}
+int main (){
+int numero=-10;
+  printf("Testa numero: %d",parametro(numero));
+  
+}
+// quando estivermos usando if: nunca usar return pois pode dar bug no código, mas se você usou return lembrar de usar o else para não dar bug
