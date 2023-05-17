@@ -1,3 +1,5 @@
+TEM O REPLITE QUE SERVE MUITO BEM OU CODE BLOCKS
+
 1 -
 #include <stdio.h>
 
@@ -16,3 +18,122 @@ int numero=-10;
   
 }
 // quando estivermos usando if: nunca usar return pois pode dar bug no código, mas se você usou return lembrar de usar o else para não dar bug
+
+2- 
+#include <stdio.h>
+
+int comparar_numeros(int numero1, int numero2) {
+    if (numero1 < numero2) {
+        return -1;
+    } else if (numero1 == numero2) {
+        return 0;
+    } else {
+        return 1;
+    }
+}
+
+int main() {
+    int numero1 = -10;
+    int numero2 = 5;
+
+    printf("Resultado: %d\n", comparar_numeros(numero1, numero2));
+    return 0;
+}
+// quando estivermos usando if: nunca usar return pois pode dar bug no código, mas se você usou return lembrar de usar o else para não dar bug
+
+ou
+
+2-
+#include <stdio.h>
+
+int comparar_numeros(int x, int y) {
+  int retorno = 999;
+    if (x > y) {
+        retorno=1;
+    } else if (x == y) {
+        retorno=0;
+  }else{
+    retorno = -1;
+  }
+         return retorno;
+}
+
+int main() {
+       printf("Resultado: %d", comparar_numeros(2,3));
+  
+}
+// bota retorno = alguma coisa para inicilizar, o 999 é um valor absurdo para quando o codigo executar ele passar em todas as linhas de código
+
+3- 
+int parOUimpar(int x) {
+    if (x%2==0){
+    return 1;
+    }
+  else{
+    return -1;
+  }
+    }
+
+int main() {
+    int x=7;
+    int retorno=parOUimpar(x);
+    if(retorno ==1){
+        printf("Numero par");
+    }
+  else {
+    printf("Numero impar");
+  }
+    }
+    
+   4-
+   
+   #include <stdio.h>
+
+float potencia (float base, float expoente){
+  float potencia=base;
+  for(int i=1; i<expoente;i++){
+    potencia = potencia*base;
+  }
+  return potencia;
+}
+
+int main() {
+        float base=3,expoente=10;
+        printf("%f ^ %f = %f", base,expoente,potencia(base,expoente));
+}
+
+
+5- #include <stdio.h>
+
+float media(float nota1, float nota2, float nota3) {
+    float media = (nota1 + nota2 + nota3) / 3;
+    return media;
+}
+
+int main() {
+    float notas[]={10,8,9};
+    printf("Média: %.f", media(notas[0],notas[1],notas[2]));
+}
+
+6- #include <stdio.h>
+#define PI 3.14
+
+double potencia(double base, double expoente) {
+    double potencia=base;
+  for(int i=1; i<expoente; i++){
+    potencia=base*potencia;
+}
+    return potencia;
+}
+ double volumeEsfera(double raio) {
+ return (4* PI * potencia(raio,3))/3;
+ }
+
+int main() {
+    double raio = 2;
+     
+    printf("Volume da esfera: %f\n", volumeEsfera(raio));
+    
+}
+
+7- 
