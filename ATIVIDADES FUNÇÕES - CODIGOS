@@ -136,4 +136,28 @@ int main() {
     
 }
 
-7- 
+7- #include <stdio.h>
+// usa-se o "char*" pq ele sabe que vai voltar um vetor de caracteres
+char* categoria(int idade) {
+    if (idade >= 5 && idade <= 7) {
+        return "INF A";  
+    } else if (idade >= 8 && idade <= 10) {
+        return "INF B";  
+    } else if (idade >= 11 && idade <= 13) {
+        return "JUN A";  
+    } else if (idade >= 14 && idade <= 17) {
+        return "JUN B";  
+    } else if (idade>=18){
+        return "ADULTO";  
+    }else {
+    return "  SEM IDADE PARA COMPETIR";
+  }
+}
+
+int main() {
+    int idade = 18;
+     
+    printf("Categoria do nadador: %s", categoria(idade));
+    
+    return 0;
+}
