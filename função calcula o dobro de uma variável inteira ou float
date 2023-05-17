@@ -1,0 +1,23 @@
+#include<stdio.h>
+
+#include <locale.h>
+//calcula o dobro de uma variável inteira ou float
+int calculaDobroInt( int x){
+return 2*x;
+}
+
+float calculaDobroFloat(float x){
+float resultado=2*x;
+return resultado;
+
+}
+
+
+int main(void){
+    setlocale(LC_ALL, "Portuguese");
+int dobro,valor=2;
+dobro=calculaDobroInt(valor);
+printf("\n O dobro de %d é %d", valor,dobro);
+printf("\n O dobro de 2.5 é %.lf", calculaDobroFloat(2.5));
+
+}
