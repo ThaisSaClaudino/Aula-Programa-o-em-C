@@ -161,3 +161,36 @@ int main() {
     
     return 0;
 }
+
+9- #include <stdio.h>
+
+long fatorial(long numero) {
+  long fatorial = numero;
+  numero = numero - 1;
+  while (numero > 1) {
+    fatorial = fatorial * numero;
+    numero = numero - 1;
+  }
+  return fatorial;  
+}
+
+long fatorialRecursivo(long numero) {
+  if (numero == 1) {
+    return 1;
+  } else {
+    return numero * fatorialRecursivo(numero - 1);
+  }
+}
+
+int main() {
+  long numero = 5, resultado;
+  resultado = fatorial(numero);
+  printf("\n Fatorial de %ld: %ld", numero, resultado);
+
+  resultado = fatorialRecursivo(numero);
+  printf("\n Fatorial de %ld: %ld", numero, resultado);
+
+  return 0;
+}
+
+10-
