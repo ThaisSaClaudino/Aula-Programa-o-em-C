@@ -194,3 +194,61 @@ int main() {
 }
 
 10-
+#include <stdio.h>
+
+char*classificaIMC(float imc){
+if(imc<18.5){
+  return "Abaixo do peso normal";
+}
+  else if (imc<24.9){
+    return "Peso normal";
+  }
+  else if (imc<29.9){
+    return "Excesso de peso";
+  }
+  else if (imc<34.9){
+    return "Obesidade Classe I";
+  }
+    else if (imc<39.9){
+    return "Obesidade Classe II";
+  }
+  else return "Obesidade Classe III";
+}
+int main() {
+  printf("Classificação: %s", classificaIMC(20.9));
+
+}
+
+11 -
+#include <stdio.h>
+
+int somaPA(int elemento, int razao, int numelementos){
+  int soma=0;
+  for(int i=0; i<numelementos;i++){
+    soma=soma+elemento;
+    elemento=elemento+razao;
+    
+  }
+  return soma;
+}
+int main() {
+  printf("Soma de n elementos: %d", somaPA(2,3,5));
+
+}
+
+12- #include <stdio.h>
+float calculoMulta(float velocidade, float limite){
+  float dif=velocidade-limite;
+  float porcentagem=dif/limite;
+    if(porcentagem<=0.20){
+    return 136.16;
+  }
+  if(porcentagem<=0.50){
+    return 195.23;
+  }
+  else return 880.41;
+}
+
+int main() {
+ printf("\n Multa: %.2f", calculoMulta(250.0,100.0));
+}
