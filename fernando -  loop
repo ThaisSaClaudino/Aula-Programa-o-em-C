@@ -1,0 +1,19 @@
+crie um programa em c que o usuario digita um valor inicial e possua um loop com 10 interações, onde a cada interação somad o valor 2 ao valor digitadao
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main() {
+  setlocale(LC_ALL, "portuguese");
+    int valor, interacoes = 10;
+    
+    printf("Digite um valor: ");
+    scanf("%d", &valor);
+    
+    for (int i = 0; i < interacoes; i++) {
+        valor += 2;
+   printf("Interação %d: Novo valor = %d\n", i + 1, valor);
+    }
+    
+    return 0;
+}
